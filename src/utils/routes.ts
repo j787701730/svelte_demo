@@ -1,5 +1,5 @@
-import Home from "../lib/Home.svelte";
-import NotFound from "../lib/NotFound.svelte";
+import Home from "@/lib/Home.svelte";
+import NotFound from "@/lib/NotFound.svelte";
 import { wrap } from 'svelte-spa-router/wrap'
 const routes = {
   '/': wrap({
@@ -9,7 +9,7 @@ const routes = {
     }
   }),
   '/book/:id': wrap({
-    asyncComponent: () => import('../lib/Book.svelte'),
+    asyncComponent: () => import('@/lib/Book.svelte'),
     userData: {
       title: "Book"
     }

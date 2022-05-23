@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Router, { replace } from "svelte-spa-router";
-  import routes from "./utils/routes";
+  import Router, { link } from "svelte-spa-router";
+  import routes from "@/utils/routes";
   function routeEvent(event) {
     // Do something
     console.log("event..............");
@@ -20,9 +20,9 @@
   <div style="font-size: 0">
     <div class="nav">
       <ul>
-        <li><a class="nav-link" href="#/">主页</a></li>
-        <li><a class="nav-link" href="#/book/111">Book</a></li>
-        <li><a class="nav-link" href="#/NotFound/">NotFound</a></li>
+        <li><a class="nav-link" href="/" use:link>主页</a></li>
+        <li><a class="nav-link" href="/book/111" use:link>Book</a></li>
+        <li><a class="nav-link" href="/NotFound/" use:link>NotFound</a></li>
       </ul>
     </div>
     <div class="content">
@@ -30,6 +30,7 @@
         {routes}
         on:routeEvent={routeEvent}
         on:routeLoaded={routeLoaded}
+        restoreScrollState={true}
       />
     </div>
   </div>

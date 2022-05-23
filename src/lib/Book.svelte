@@ -1,10 +1,13 @@
 <script lang="ts">
-  import { fade } from "svelte/transition";
+  import RouteTransition from "@/components/RouteTransition.svelte";
+
   export let params = { id: "" };
   console.log(params);
 </script>
 
-<div in:fade={{ duration: 500 }}>Book的id: {params.id}</div>
+<RouteTransition>
+  <div>Book的id: {params.id}</div>
+</RouteTransition>
 
 <style>
   div {

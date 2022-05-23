@@ -8,12 +8,12 @@ pnpm install
 
 ## 运行
 
-`
+```
 pnpm run dev
-`
+```
 
 ## 打包
 
-`
+```
 pnpm build
-`
+```
