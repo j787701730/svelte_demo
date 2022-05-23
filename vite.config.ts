@@ -9,5 +9,8 @@ export default defineConfig({
       '@': resolve(__dirname, 'src')
     }
   },
-  base: './'
+  base: './',
+  server: {
+    host: '0.0.0.0'
+  }
 })

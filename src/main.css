@@ -27,3 +27,7 @@ body * {
 h1 {
   font-size: 2em;
 }
+
+.container {
+  min-height: calc(100vh - 52px - 35px);
+}
