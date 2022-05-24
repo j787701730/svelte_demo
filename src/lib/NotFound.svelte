@@ -1,7 +1,7 @@
 <script lang="ts">
   import RouteTransition from "@/components/RouteTransition.svelte";
 
-  export let params = {};
+  // export let params = {};
   // console.log(params);
 </script>
 
