@@ -2,7 +2,7 @@
   import RouteTransition from "@/components/RouteTransition.svelte";
 
   export let params = {};
-  console.log(params);
+  // console.log(params);
 </script>
 
 <RouteTransition>

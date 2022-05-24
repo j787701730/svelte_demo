@@ -12,5 +12,13 @@ export default defineConfig({
   base: './',
   server: {
     host: '0.0.0.0'
+  },
+  build: {
+    rollupOptions: {
+      input: {
+        default: '/index.html',
+        user: '/user.html'
+      }
+    }
   }
 })

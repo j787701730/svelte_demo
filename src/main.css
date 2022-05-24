@@ -28,6 +28,20 @@ h1 {
   font-size: 2em;
 }
 
+button {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  line-height: 32px;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+button:focus,
+button:hover {
+  background-color: #f5f5f5;
+}
+
 .container {
   min-height: calc(100vh - 52px - 35px);
+  padding: 16px;
 }

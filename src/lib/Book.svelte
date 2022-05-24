@@ -3,7 +3,7 @@
   import Counter from "./Counter.svelte";
 
   export let params = { id: "" };
-  console.log(params);
+  // console.log(params);
 </script>
 
 <RouteTransition>
